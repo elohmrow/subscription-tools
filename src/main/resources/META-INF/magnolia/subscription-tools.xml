@@ -13,6 +13,7 @@
       <name>core</name>
       <version>5.5/*</version>
     </dependency>
+    <!--
     <dependency>
       <name>activation</name>
       <version>5.5/*</version>
@@ -21,5 +22,6 @@
       <name>rest-services</name>
       <version>1.2/*</version>
     </dependency>
+    -->
   </dependencies>
 </module>

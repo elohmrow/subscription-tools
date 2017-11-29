@@ -3,7 +3,7 @@
   <sv:property sv:name="jcr:primaryType" sv:type="Name">
     <sv:value>mgnl:content</sv:value>
   </sv:property>
-  <sv:node sv:name="default">
+  <sv:node sv:name="subscriptions">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>mgnl:content</sv:value>
     </sv:property>
@@ -37,6 +37,14 @@
       </sv:property>
       <sv:property sv:name="class" sv:type="String">
         <sv:value>info.magnolia.services.subscriptiontools.commands.RemoveSubscriberCommand</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="getPublicKey">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:contentNode</sv:value>
+      </sv:property>
+      <sv:property sv:name="class" sv:type="String">
+        <sv:value>info.magnolia.services.subscriptiontools.commands.GetPublicKeyCommand</sv:value>
       </sv:property>
     </sv:node>
   </sv:node>

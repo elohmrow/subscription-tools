@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" sv:name="default-deactivateSubscriber">
+<sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" sv:name="getPublicKey">
   <sv:property sv:name="jcr:primaryType" sv:type="Name">
     <sv:value>mgnl:contentNode</sv:value>
   </sv:property>
+  <sv:property sv:name="catalogName" sv:type="String">
+    <sv:value>subscriptions</sv:value>
+  </sv:property>
   <sv:property sv:name="commandName" sv:type="String">
-    <sv:value>deactivateSubscriber</sv:value>
+    <sv:value>getPublicKey</sv:value>
   </sv:property>
   <sv:node sv:name="access">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -14,8 +17,8 @@
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:contentNode</sv:value>
       </sv:property>
-      <sv:property sv:name="rest-addSubscriber" sv:type="String">
-        <sv:value>rest-addSubscriber</sv:value>
+      <sv:property sv:name="rest-subscriptions" sv:type="String">
+        <sv:value>rest-subscriptions</sv:value>
       </sv:property>
     </sv:node>
   </sv:node>
@@ -23,8 +26,8 @@
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>mgnl:contentNode</sv:value>
     </sv:property>
-    <sv:property sv:name="active" sv:type="String">
-      <sv:value>active</sv:value>
+    <sv:property sv:name="publicKey" sv:type="String">
+      <sv:value>publicKey</sv:value>
     </sv:property>
   </sv:node>
 </sv:node>
