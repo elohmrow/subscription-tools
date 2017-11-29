@@ -22,7 +22,7 @@
     <sv:value>superuser</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-    <sv:value>2017-11-29T15:25:41.441+01:00</sv:value>
+    <sv:value>2017-11-29T22:31:52.999+01:00</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
     <sv:value>superuser</sv:value>
@@ -53,7 +53,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2017-11-29T15:25:41.225+01:00</sv:value>
+      <sv:value>2017-11-29T22:31:52.919+01:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -63,16 +63,16 @@
         <sv:value>mgnl:contentNode</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>d5a6d446-467d-46b3-822f-7188b084de4e</sv:value>
+        <sv:value>528e097b-bc29-421f-8830-52e1ec253f04</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2017-11-29T15:25:41.225+01:00</sv:value>
+        <sv:value>2017-11-29T22:31:52.919+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:createdBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2017-11-29T15:25:41.225+01:00</sv:value>
+        <sv:value>2017-11-29T22:31:52.919+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
@@ -108,7 +108,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2017-11-29T15:25:41.441+01:00</sv:value>
+      <sv:value>2017-11-29T22:31:52.998+01:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -118,22 +118,22 @@
         <sv:value>mgnl:contentNode</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>7cc8d165-6183-4231-a269-ac5dae942ef5</sv:value>
+        <sv:value>4550cbc2-8aea-41d4-b0e7-449316f54df3</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2017-11-29T15:25:41.436+01:00</sv:value>
+        <sv:value>2017-11-29T22:31:52.998+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:createdBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2017-11-29T15:25:41.436+01:00</sv:value>
+        <sv:value>2017-11-29T22:31:52.998+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="path" sv:type="String">
-        <sv:value>/.rest/commands/v2/default/addSubscriber</sv:value>
+        <sv:value>/.rest/commands/v2/subscriptions/addSubscriber</sv:value>
       </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>63</sv:value>
@@ -144,22 +144,22 @@
         <sv:value>mgnl:contentNode</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>ac582fa1-d7d2-4a87-b1b0-109e457024d7</sv:value>
+        <sv:value>3d55c85f-68aa-4467-9040-47f0490f0526</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2017-11-29T15:25:41.437+01:00</sv:value>
+        <sv:value>2017-11-29T22:31:52.998+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:createdBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2017-11-29T15:25:41.437+01:00</sv:value>
+        <sv:value>2017-11-29T22:31:52.998+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="path" sv:type="String">
-        <sv:value>/.rest/commands/v2/addSubscriber</sv:value>
+        <sv:value>/.rest/commands/v2/subscriptions/activateSubscriber</sv:value>
       </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>63</sv:value>
@@ -170,22 +170,22 @@
         <sv:value>mgnl:contentNode</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>fb0e930a-e028-4a21-a5e4-cb101a796f99</sv:value>
+        <sv:value>30f34536-97bd-4e47-8eb7-3a7820f16073</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2017-11-29T15:25:41.437+01:00</sv:value>
+        <sv:value>2017-11-29T22:31:52.998+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:createdBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2017-11-29T15:25:41.437+01:00</sv:value>
+        <sv:value>2017-11-29T22:31:52.998+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="path" sv:type="String">
-        <sv:value>/.rest/commands/v2/default/activateSubscriber</sv:value>
+        <sv:value>/.rest/commands/v2/subscriptions/deactivateSubscriber</sv:value>
       </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>63</sv:value>
@@ -196,22 +196,22 @@
         <sv:value>mgnl:contentNode</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>31b49da1-2cea-4c90-b743-94c007c62e17</sv:value>
+        <sv:value>b404af9f-8d73-414d-ac35-e2ecf3ca480e</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2017-11-29T15:25:41.438+01:00</sv:value>
+        <sv:value>2017-11-29T22:31:52.998+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:createdBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2017-11-29T15:25:41.438+01:00</sv:value>
+        <sv:value>2017-11-29T22:31:52.998+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="path" sv:type="String">
-        <sv:value>/.rest/commands/v2/activateSubscriber</sv:value>
+        <sv:value>/.rest/commands/v2/subscriptions/removeSubscriber</sv:value>
       </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>63</sv:value>
@@ -222,100 +222,22 @@
         <sv:value>mgnl:contentNode</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>4c3e4e5e-f3ac-4886-84b2-1430045b0b55</sv:value>
+        <sv:value>7a519b19-f4f4-4d1f-96a0-cf5530bd965d</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2017-11-29T15:25:41.439+01:00</sv:value>
+        <sv:value>2017-11-29T22:31:52.998+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:createdBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2017-11-29T15:25:41.439+01:00</sv:value>
+        <sv:value>2017-11-29T22:31:52.998+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="path" sv:type="String">
-        <sv:value>/.rest/commands/v2/default/deactivateSubscriber</sv:value>
-      </sv:property>
-      <sv:property sv:name="permissions" sv:type="Long">
-        <sv:value>63</sv:value>
-      </sv:property>
-    </sv:node>
-    <sv:node sv:name="04">
-      <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>mgnl:contentNode</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>0a52c5b7-4103-45ae-a5c1-7e67c8d1e7ce</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2017-11-29T15:25:41.439+01:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:createdBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2017-11-29T15:25:41.439+01:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="path" sv:type="String">
-        <sv:value>/.rest/commands/v2/deactivateSubscriber</sv:value>
-      </sv:property>
-      <sv:property sv:name="permissions" sv:type="Long">
-        <sv:value>63</sv:value>
-      </sv:property>
-    </sv:node>
-    <sv:node sv:name="05">
-      <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>mgnl:contentNode</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>5d6f0be0-626f-45f7-8651-3a89d43b0d9a</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2017-11-29T15:25:41.440+01:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:createdBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2017-11-29T15:25:41.440+01:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="path" sv:type="String">
-        <sv:value>/.rest/commands/v2/default/removeSubscriber</sv:value>
-      </sv:property>
-      <sv:property sv:name="permissions" sv:type="Long">
-        <sv:value>63</sv:value>
-      </sv:property>
-    </sv:node>
-    <sv:node sv:name="06">
-      <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>mgnl:contentNode</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>4758537b-6113-4950-8d4d-7bb6ef074f17</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2017-11-29T15:25:41.441+01:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:createdBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2017-11-29T15:25:41.441+01:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="path" sv:type="String">
-        <sv:value>/.rest/commands/v2/removeSubscriber</sv:value>
+        <sv:value>/.rest/commands/v2/subscriptions/getPublicKey</sv:value>
       </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>63</sv:value>
