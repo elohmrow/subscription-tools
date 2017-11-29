@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module SYSTEM "module.dtd" >
+<module>
+  <name>subscription-tools</name>
+  <displayName>subscription-tools Magnolia Module</displayName>
+  <description>${project.description}</description>
+  <class>info.magnolia.services.SubscriptionTools</class>
+  <versionHandler>info.magnolia.services.setup.SubscriptionToolsVersionHandler</versionHandler>
+  <version>1.0-SNAPSHOT</version>
+
+  <dependencies>
+    <dependency>
+      <name>core</name>
+      <version>5.5/*</version>
+    </dependency>
+    <dependency>
+      <name>activation</name>
+      <version>5.5/*</version>
+    </dependency>
+    <dependency>
+      <name>rest-services</name>
+      <version>1.2/*</version>
+    </dependency>
+  </dependencies>
+</module>
