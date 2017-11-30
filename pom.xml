@@ -2,21 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>subsdev</artifactId>
-    <groupId>info.magnolia.services</groupId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>info.magnolia.services.maven.poms</groupId>
+    <artifactId>magnolia-services-incubator-pom</artifactId>
+    <version>1.4</version>
   </parent>
   <groupId>info.magnolia.services</groupId>
   <artifactId>subscription-tools</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>subscription-tools Magnolia Module</name>
-  <!--
-  <description>Please uncomment and fill in ...</description>
-  -->
+  <description>Subscription management tools module</description>
   <properties>
     <magnoliaVersion>5.5</magnoliaVersion>
     <javaVersion>1.8</javaVersion>
+    <mockitoVersion>1.10.19</mockitoVersion>
   </properties>
 
   <dependencies>
@@ -45,6 +44,19 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>info.magnolia</groupId>
+      <artifactId>magnolia-core</artifactId>
+      <version>${magnoliaVersion}</version>
+      <type>test-jar</type>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>${mockitoVersion}</version>
+      <scope>test</scope>
+    </dependency>
+
   </dependencies>
 
   <build>
@@ -86,7 +98,6 @@
       </snapshots>
     </repository>
     <!-- IF YOU NEED MODULES FROM THE ENTERPRISE VERSION, UNCOMMENT THE FOLLOWING REPOSITORY -->
-    <!--
     <repository>
       <id>magnolia.enterprise.releases</id>
       <url>https://nexus.magnolia-cms.com/content/repositories/magnolia.enterprise.releases</url>
@@ -94,7 +105,6 @@
         <enabled>false</enabled>
       </snapshots>
     </repository>
-    -->
     <repository>
       <id>vaadin-addons</id>
       <url>https://maven.vaadin.com/vaadin-addons</url>

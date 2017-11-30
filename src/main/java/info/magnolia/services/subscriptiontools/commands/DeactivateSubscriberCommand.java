@@ -1,9 +1,22 @@
+/**
+ * This file Copyright (c) 2017 Magnolia International
+ * Ltd.  (http://www.magnolia-cms.com). All rights reserved.
+ *
+ *
+ * This program and the accompanying materials are made
+ * available under the terms of the Magnolia Network Agreement
+ * which accompanies this distribution, and is available at
+ * http://www.magnolia-cms.com/mna.html
+ *
+ * Any modifications to this file must keep this entire header
+ * intact.
+ *
+ */
 package info.magnolia.services.subscriptiontools.commands;
 
 import info.magnolia.cms.exchange.ActivationManager;
 import info.magnolia.cms.exchange.Subscriber;
 import info.magnolia.commands.MgnlCommand;
-import info.magnolia.context.MgnlContext;
 import info.magnolia.jcr.util.PropertyUtil;
 import info.magnolia.context.Context;
 import info.magnolia.repository.RepositoryConstants;
@@ -19,6 +32,9 @@ import javax.jcr.Session;
 
 import javax.inject.Inject;
 
+/**
+ * TBD.
+ */
 public class DeactivateSubscriberCommand extends MgnlCommand {
     private static final Logger logger = LoggerFactory.getLogger(DeactivateSubscriberCommand.class);
 
@@ -57,7 +73,7 @@ public class DeactivateSubscriberCommand extends MgnlCommand {
             deactivateSubscriber(name);
         }
 
-        MgnlContext.setAttribute(ACTIVE_KEY, Boolean.FALSE);
+        context.setAttribute(ACTIVE_KEY, Boolean.FALSE, Context.APPLICATION_SCOPE);
 
         return true;
     }

@@ -18,7 +18,6 @@ import info.magnolia.commands.MgnlCommand;
 import info.magnolia.cms.exchange.ActivationManager;
 import info.magnolia.context.Context;
 
-import info.magnolia.context.MgnlContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -41,7 +40,7 @@ public class GetPublicKeyCommand extends MgnlCommand {
 
     @Override
     public boolean execute(Context context) throws Exception {
-        MgnlContext.setAttribute(PUBLICKEY_KEY, this.activationManager.getPublicKey());
+        context.setAttribute(PUBLICKEY_KEY, this.activationManager.getPublicKey(), Context.APPLICATION_SCOPE);
         return true;
     }
 }
