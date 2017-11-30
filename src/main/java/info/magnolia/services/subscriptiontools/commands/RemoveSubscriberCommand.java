@@ -35,9 +35,9 @@ import javax.jcr.Session;
 public class RemoveSubscriberCommand extends MgnlCommand {
     private static final Logger logger = LoggerFactory.getLogger(RemoveSubscriberCommand.class);
 
-    protected final static String SUBSCRIBER_PATH = "/server/activation/subscribers/{0}";
+    protected static final String SUBSCRIBER_PATH = "/server/activation/subscribers/{0}";
 
-    public final static String NAME_KEY = "name";
+    public static final String NAME_KEY = "name";
 
     ActivationManager activationManager;
 
@@ -48,6 +48,7 @@ public class RemoveSubscriberCommand extends MgnlCommand {
 
     @Override
     public boolean execute(Context context) throws Exception {
+        logger.debug("execute called");
 
         if (context.getAttribute(NAME_KEY) == null) {
             throw new IllegalArgumentException("Missing required parameter name");

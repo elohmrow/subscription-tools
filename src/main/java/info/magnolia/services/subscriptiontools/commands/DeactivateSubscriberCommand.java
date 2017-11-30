@@ -38,11 +38,11 @@ import javax.inject.Inject;
 public class DeactivateSubscriberCommand extends MgnlCommand {
     private static final Logger logger = LoggerFactory.getLogger(DeactivateSubscriberCommand.class);
 
-    protected final static String SUBSCRIBER_PATH = "/server/activation/subscribers/{0}";
+    protected static final String SUBSCRIBER_PATH = "/server/activation/subscribers/{0}";
 
-    public final static String NAME_KEY = "name";
-    public final static String CONFIGURE_KEY = "configure";
-    public final static String ACTIVE_KEY = "active";
+    public static final String NAME_KEY = "name";
+    public static final String CONFIGURE_KEY = "configure";
+    public static final String ACTIVE_KEY = "active";
 
     ActivationManager activationManager;
 
@@ -53,6 +53,7 @@ public class DeactivateSubscriberCommand extends MgnlCommand {
 
     @Override
     public boolean execute(Context context) throws Exception {
+        logger.debug("execute called");
 
         if (context.getAttribute(NAME_KEY) == null) {
             throw new IllegalArgumentException("Missing required parameter name");

@@ -29,7 +29,7 @@ import javax.inject.Inject;
 public class GetPublicKeyCommand extends MgnlCommand {
     private static final Logger logger = LoggerFactory.getLogger(ActivateSubscriberCommand.class);
 
-    public final static String PUBLICKEY_KEY = "publicKey";
+    public static final String PUBLICKEY_KEY = "publicKey";
 
     ActivationManager activationManager;
 
@@ -40,6 +40,8 @@ public class GetPublicKeyCommand extends MgnlCommand {
 
     @Override
     public boolean execute(Context context) throws Exception {
+        logger.debug("execute called");
+
         context.setAttribute(PUBLICKEY_KEY, this.activationManager.getPublicKey(), Context.APPLICATION_SCOPE);
         return true;
     }

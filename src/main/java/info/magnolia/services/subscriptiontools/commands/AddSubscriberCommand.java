@@ -47,14 +47,14 @@ public class AddSubscriberCommand extends MgnlCommand {
 
     private static final Logger logger = LoggerFactory.getLogger(AddSubscriberCommand.class);
 
-    protected final static String SUBSCRIPTIONS_PATH = "/server/activation/subscribers";
+    protected static final String SUBSCRIPTIONS_PATH = "/server/activation/subscribers";
 
-    public final static String NAME_KEY = "name";
-    public final static String URL_KEY = "URL";
-    public final static String SUBSCRIPTION_KEY = "subscription";
-    public final static String CONFIGURE_KEY = "configure";
-    public final static String PUBLICKEY_KEY = "publicKey";
-    public final static String ACTIVE_KEY = "active";
+    public static final String NAME_KEY = "name";
+    public static final String URL_KEY = "URL";
+    public static final String SUBSCRIPTION_KEY = "subscription";
+    public static final String CONFIGURE_KEY = "configure";
+    public static final String PUBLICKEY_KEY = "publicKey";
+    public static final String ACTIVE_KEY = "active";
 
     SubscriptionTools subscriptionTools;
     ActivationManager activationManager;
@@ -68,6 +68,8 @@ public class AddSubscriberCommand extends MgnlCommand {
     @SuppressWarnings("deprecation")
     @Override
     public boolean execute(Context context) throws Exception {
+        logger.debug("execute called");
+
         // TODO: quick return if we are a public instance
 
         if (context.getAttribute(NAME_KEY) == null) {
@@ -153,36 +155,29 @@ public class AddSubscriberCommand extends MgnlCommand {
         this.activationManager.addSubscribers(subscriber);
     }
 
-    private Node clone(Node node, Node parent, String name) {
-
+    private Node clone(Node node, Node parent, String name) throws RepositoryException {
         // create the new node under the parent
-        Node clone = null;
-        try {
-            clone = parent.addNode(name, node.getPrimaryNodeType().getName());
+        Node clone = parent.addNode(name, node.getPrimaryNodeType().getName());
 
-            // copy properties
-            PropertyIterator properties = node.getProperties();
+        // copy properties
+        PropertyIterator properties = node.getProperties();
 
-            while (properties.hasNext()) {
-                Property property = properties.nextProperty();
-                if (!property.getName().startsWith("jcr:") && !property.getName().startsWith("mgnl:")) {
-                    PropertyUtil.setProperty(clone, property.getName(), property.getValue());
-                }
+        while (properties.hasNext()) {
+            Property property = properties.nextProperty();
+            if (!property.getName().startsWith("jcr:") && !property.getName().startsWith("mgnl:")) {
+                PropertyUtil.setProperty(clone, property.getName(), property.getValue());
             }
-
-            // copy subnodes
-            NodeIterator children = node.getNodes();
-
-            while (children.hasNext()) {
-                Node child = children.nextNode();
-                clone(child, clone, child.getName());
-            }
-
-            return clone;
-
-        } catch (RepositoryException e) {
-            throw new RuntimeException(e);
         }
+
+        // copy subnodes
+        NodeIterator children = node.getNodes();
+
+        while (children.hasNext()) {
+            Node child = children.nextNode();
+            clone(child, clone, child.getName());
+        }
+
+        return clone;
     }
 
 }
