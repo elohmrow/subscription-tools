@@ -18,6 +18,13 @@
     <mockitoVersion>1.10.19</mockitoVersion>
   </properties>
 
+  <scm>
+    <connection>scm:git:https://git.magnolia-cms.com/scm/services/subscription-tools.git</connection>
+    <developerConnection>scm:git:https://git.magnolia-cms.com/scm/services/subscription-tools.git</developerConnection>
+    <url>https://git.magnolia-cms.com/projects/SERVICES/repos/subscription-tools</url>
+    <tag>scheduled-activation-1.1</tag>
+  </scm>
+
   <dependencies>
     <dependency>
       <groupId>info.magnolia</groupId>
