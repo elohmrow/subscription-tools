@@ -8,7 +8,7 @@
   </parent>
   <groupId>info.magnolia.services</groupId>
   <artifactId>subscription-tools</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>jar</packaging>
   <name>subscription-tools Magnolia Module</name>
   <description>Subscription management tools module</description>
@@ -111,4 +111,8 @@
     </repository>
   </repositories>
 
+
+  <scm>
+    <tag>subscription-tools-1.0</tag>
+  </scm>
 </project>
