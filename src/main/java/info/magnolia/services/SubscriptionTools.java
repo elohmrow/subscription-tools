@@ -32,8 +32,8 @@ import java.text.MessageFormat;
 public class SubscriptionTools implements ModuleLifecycle {
     private static final Logger logger = LoggerFactory.getLogger(SubscriptionTools.class);
 
-    protected final static String DEFAULT_SUBSCRIPTION_PATH = "/modules/subscription-tools/config/defaultSubscription";
-    protected final static String NAMED_SUBSCRIPTION_PATH = "/modules/subscription-tools/config/subscriptions/{0}";
+    protected static final String DEFAULT_SUBSCRIPTION_PATH = "/modules/subscription-tools/config/defaultSubscription";
+    protected static final String NAMED_SUBSCRIPTION_PATH = "/modules/subscription-tools/config/subscriptions/{0}";
 
     Collection<Subscription> defaultSubscriptions;
     Map<String,NamedSubscriptions> subscriptions;
