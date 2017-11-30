@@ -8,7 +8,7 @@
   </parent>
   <groupId>info.magnolia.services</groupId>
   <artifactId>subscription-tools</artifactId>
-  <version>1.1</version>
+  <version>1.2-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>subscription-tools Magnolia Module</name>
   <description>Subscription management tools module</description>
@@ -22,7 +22,7 @@
     <connection>scm:git:https://git.magnolia-cms.com/scm/services/subscription-tools.git</connection>
     <developerConnection>scm:git:https://git.magnolia-cms.com/scm/services/subscription-tools.git</developerConnection>
     <url>https://git.magnolia-cms.com/projects/SERVICES/repos/subscription-tools</url>
-    <tag>subscription-tools-1.1</tag>
+    <tag>subscription-tools-1.0</tag>
   </scm>
 
   <dependencies>
