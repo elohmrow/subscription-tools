@@ -22,7 +22,7 @@
     <connection>scm:git:https://git.magnolia-cms.com/scm/services/subscription-tools.git</connection>
     <developerConnection>scm:git:https://git.magnolia-cms.com/scm/services/subscription-tools.git</developerConnection>
     <url>https://git.magnolia-cms.com/projects/SERVICES/repos/subscription-tools</url>
-    <tag>subscription-tools-1.0</tag>
+    <tag>subscription-tools-1.2</tag>
   </scm>
 
   <dependencies>
