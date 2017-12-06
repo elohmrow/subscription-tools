@@ -18,6 +18,7 @@ import info.magnolia.cms.exchange.ActivationManager;
 import info.magnolia.cms.exchange.Subscriber;
 import info.magnolia.commands.MgnlCommand;
 import info.magnolia.jcr.util.PropertyUtil;
+import info.magnolia.context.MgnlContext;
 import info.magnolia.context.Context;
 import info.magnolia.repository.RepositoryConstants;
 
@@ -74,7 +75,7 @@ public class DeactivateSubscriberCommand extends MgnlCommand {
             deactivateSubscriber(name);
         }
 
-        context.setAttribute(ACTIVE_KEY, Boolean.FALSE, Context.APPLICATION_SCOPE);
+        MgnlContext.setAttribute(ACTIVE_KEY, Boolean.FALSE);
 
         return true;
     }

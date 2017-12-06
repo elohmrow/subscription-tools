@@ -15,6 +15,7 @@
 package info.magnolia.services.subscriptiontools.commands;
 
 import info.magnolia.context.Context;
+import info.magnolia.context.MgnlContext;
 import info.magnolia.jcr.util.PropertyUtil;
 import info.magnolia.jcr.util.NodeTypes;
 import info.magnolia.repository.RepositoryConstants;
@@ -107,8 +108,8 @@ public class AddSubscriberCommand extends MgnlCommand {
             addSubscriber(name, url, subscriptionName);
         }
 
-        context.setAttribute(PUBLICKEY_KEY, this.activationManager.getPublicKey(), Context.APPLICATION_SCOPE);
-        context.setAttribute(ACTIVE_KEY, Boolean.FALSE, Context.APPLICATION_SCOPE);
+        MgnlContext.setAttribute(PUBLICKEY_KEY, this.activationManager.getPublicKey());
+        MgnlContext.setAttribute(ACTIVE_KEY, Boolean.FALSE);
 
         return true;
     }

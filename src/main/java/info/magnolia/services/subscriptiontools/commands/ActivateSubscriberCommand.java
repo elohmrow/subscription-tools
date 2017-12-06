@@ -17,6 +17,7 @@ package info.magnolia.services.subscriptiontools.commands;
 import info.magnolia.cms.exchange.ActivationManager;
 import info.magnolia.cms.exchange.Subscriber;
 import info.magnolia.commands.MgnlCommand;
+import info.magnolia.context.MgnlContext;
 import info.magnolia.jcr.util.PropertyUtil;
 import info.magnolia.context.Context;
 import info.magnolia.repository.RepositoryConstants;
@@ -73,7 +74,7 @@ public class ActivateSubscriberCommand extends MgnlCommand {
             activateSubscriber(name);
         }
 
-        context.setAttribute(ACTIVE_KEY, Boolean.TRUE, Context.APPLICATION_SCOPE);
+        MgnlContext.setAttribute(ACTIVE_KEY, Boolean.TRUE);
 
         return true;
     }

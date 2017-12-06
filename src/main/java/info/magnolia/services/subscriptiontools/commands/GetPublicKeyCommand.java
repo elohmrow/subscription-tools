@@ -17,6 +17,7 @@ package info.magnolia.services.subscriptiontools.commands;
 import info.magnolia.commands.MgnlCommand;
 import info.magnolia.cms.exchange.ActivationManager;
 import info.magnolia.context.Context;
+import info.magnolia.context.MgnlContext;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -42,7 +43,8 @@ public class GetPublicKeyCommand extends MgnlCommand {
     public boolean execute(Context context) throws Exception {
         logger.debug("execute called");
 
-        context.setAttribute(PUBLICKEY_KEY, this.activationManager.getPublicKey(), Context.APPLICATION_SCOPE);
+        MgnlContext.setAttribute(PUBLICKEY_KEY, this.activationManager.getPublicKey());
+
         return true;
     }
 }
